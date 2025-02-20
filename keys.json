@@ -1,0 +1,13 @@
+{
+    "licenses": [{
+            "username": "admin",
+            "password": "pass123",
+            "isActive": true
+        },
+        {
+            "username": "test",
+            "password": "pass456",
+            "isActive": true
+        }
+    ]
+}

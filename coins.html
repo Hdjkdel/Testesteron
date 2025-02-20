@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#3b82f6">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>Crypto Soft VI Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="coins.css">
+    <link rel="manifest" href="manifest.json">
+</head>
+
+<body>
+    <div class="container">
+        <header class="dashboard-header">
+            <h1 class="title">Select Blockchain</h1>
+            <p class="subtitle">Choose the blockchain network you want to enable</p>
+        </header>
+
+        <div class="coins-grid">
+            <div class="coin-card" data-coin="BTC">
+                <div class="coin-content">
+                    <div class="coin-icon btc-icon">
+                        <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16 32C7.163 32 0 24.837 0 16S7.163 0 16 0s16 7.163 16 16-7.163 16-16 16zm7.189-17.98c.314-2.096-1.283-3.223-3.465-3.975l.708-2.84-1.728-.43-.69 2.765c-.454-.114-.92-.22-1.385-.326l.695-2.783L15.596 6l-.708 2.839c-.376-.086-.746-.17-1.104-.26l.002-.009-2.384-.595-.46 1.846s1.283.294 1.256.312c.7.175.826.638.805 1.006l-.806 3.235c.048.012.11.03.18.057l-.183-.045-1.13 4.532c-.086.212-.303.531-.793.41.018.025-1.256-.313-1.256-.313l-.858 1.978 2.25.561c.418.105.828.215 1.231.318l-.715 2.872 1.727.43.708-2.84c.472.127.93.245 1.378.357l-.706 2.828 1.728.43.715-2.866c2.948.558 5.164.333 6.097-2.333.752-2.146-.037-3.385-1.588-4.192 1.13-.26 1.98-1.003 2.207-2.538zm-3.95 5.538c-.533 2.147-4.148.986-5.32.695l.95-3.805c1.172.293 4.929.872 4.37 3.11zm.535-5.569c-.487 1.953-3.495.96-4.47.717l.86-3.45c.975.243 4.118.696 3.61 2.733z" fill="#F7931A"/>
+                        </svg>
+                    </div>
+                    <h3 class="coin-name">Bitcoin</h3>
+                    <span class="coin-symbol">BTC</span>
+                </div>
+                <div class="coin-overlay">
+                    <button class="select-btn">Select</button>
+                </div>
+            </div>
+
+            <div class="coin-card" data-coin="ETH">
+                <div class="coin-content">
+                    <img src="https://i.imgur.com/I4V9ywr.png" alt="Ethereum" class="coin-image">
+                    <h3 class="coin-name">Ethereum</h3>
+                    <span class="coin-symbol">ETH</span>
+                </div>
+                <div class="coin-overlay">
+                    <button class="select-btn">Select</button>
+                </div>
+            </div>
+
+            <div class="coin-card" data-coin="USDT">
+                <div class="coin-content">
+                    <img src="https://i.imgur.com/jJrwIvV.png" alt="Tether" class="coin-image">
+                    <h3 class="coin-name">Tether</h3>
+                    <span class="coin-symbol">USDT</span>
+                </div>
+                <div class="coin-overlay">
+                    <button class="select-btn">Select</button>
+                </div>
+            </div>
+
+            <div class="coin-card" data-coin="BNB">
+                <div class="coin-content">
+                    <img src="https://i.imgur.com/gwrIQTZ_d.webp" alt="Binance" class="coin-image">
+                    <h3 class="coin-name">Binance</h3>
+                    <span class="coin-symbol">BNB</span>
+                </div>
+                <div class="coin-overlay">
+                    <button class="select-btn">Select</button>
+                </div>
+            </div>
+
+            <div class="coin-card" data-coin="TRX">
+                <div class="coin-content">
+                    <img src="https://i.imgur.com/v4huAvo_d.webp" alt="Tron" class="coin-image">
+                    <h3 class="coin-name">Tron</h3>
+                    <span class="coin-symbol">TRX</span>
+                </div>
+                <div class="coin-overlay">
+                    <button class="select-btn">Select</button>
+                </div>
+            </div>
+
+            <div class="coin-card" data-coin="DOGE">
+                <div class="coin-content">
+                    <img src="https://i.imgur.com/baWhshZ_d.webp" alt="Dogecoin" class="coin-image">
+                    <h3 class="coin-name">Dogecoin</h3>
+                    <span class="coin-symbol">DOGE</span>
+                </div>
+                <div class="coin-overlay">
+                    <button class="select-btn">Select</button>
+                </div>
+            </div>
+
+            <div class="coin-card" data-coin="SOL">
+                <div class="coin-content">
+                    <img src="https://i.imgur.com/he7NxNK.png" alt="Solana" class="coin-image">
+                    <h3 class="coin-name">Solana</h3>
+                    <span class="coin-symbol">SOL</span>
+                </div>
+                <div class="coin-overlay">
+                    <button class="select-btn">Select</button>
+                </div>
+            </div>
+
+            <div class="coin-card" data-coin="PL">
+                <div class="coin-content">
+                    <img src="https://i.imgur.com/ALUdSY9.png" alt="Polygon" class="coin-image">
+                    <h3 class="coin-name">Polygon</h3>
+                    <span class="coin-symbol">PL</span>
+                </div>
+                <div class="coin-overlay">
+                    <button class="select-btn">Select</button>
+                </div>
+            </div>
+
+            <!-- XRP (Ripple) kartı -->
+            <div class="coin-card" data-coin="XRP">
+                <div class="coin-content">
+                    <div class="coin-icon xrp-icon">
+                        <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16 32C7.163 32 0 24.837 0 16S7.163 0 16 0s16 7.163 16 16-7.163 16-16 16zm7.07-24l-4.574 4.523a3.556 3.556 0 01-4.996 0L8.93 8H6.035l6.02 5.957a5.621 5.621 0 007.89 0L25.965 8h-2.895zM6 23.465h2.895l4.574-4.523a3.556 3.556 0 014.996 0L23.035 23.465H26l-6.02-5.957a5.621 5.621 0 00-7.89 0L6 23.465z" fill="#23292F"/>
+                        </svg>
+                    </div>
+                    <h3 class="coin-name">Ripple</h3>
+                    <span class="coin-symbol">XRP</span>
+                </div>
+                <div class="coin-overlay">
+                    <button class="select-btn">Select</button>
+                </div>
+            </div>
+        </div>
+
+        <button id="start-button" class="start-button">START</button>
+    </div>
+
+    <!-- Fixed Footer -->
+    <nav class="bottom-nav">
+        <a href="coins.html" class="nav-item">
+            <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <path d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span>Home</span>
+        </a>
+
+        <a href="index5.html" class="nav-item">
+            <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <path d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span>Stats</span>
+        </a>
+
+        <a href="indexsport.html" class="nav-item">
+            <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <path d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span>Support</span>
+        </a>
+    </nav>
+
+    <script src="coins.js"></script>
+    <script src="auth.js"></script>
+    <script src="/public/js/navigation.js"></script>
+</body>
+
+</html>
+
+</html>
